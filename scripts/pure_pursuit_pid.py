@@ -56,7 +56,7 @@ class pure_pursuit :
         self.current_postion=Point()
         self.is_look_forward_point=False
         self.vehicle_length=1.63
-        self.lfd = 10
+        self.lfd = 8
 
         self.pid_controller = pidControl()
 
