@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import rospy, os
@@ -71,7 +71,7 @@ class pure_pursuit :
                     if self.ctrl_cmd_msg.steering is None:
                         print("you need to change the value at line 70")
                         exit()
-                    self.ctrl_cmd_msg.velocity = 15.0
+                    self.ctrl_cmd_msg.velocity = 20.0
 
                     os.system('clear')
                     print("-------------------------------------")

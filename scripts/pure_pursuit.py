@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import rospy, os
@@ -66,7 +66,7 @@ class pure_pursuit :
 
                 if self.is_look_forward_point :
                     self.ctrl_cmd_msg.steering = atan2((2*self.vehicle_length*sin(theta)),self.lfd)
-                    self.ctrl_cmd_msg.velocity = 15.0
+                    self.ctrl_cmd_msg.velocity = 20.0
 
                     os.system('clear')
                     print("-------------------------------------")
